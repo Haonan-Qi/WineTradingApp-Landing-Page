@@ -1,18 +1,33 @@
 /* The range of Universal selector is limited, Not how to combine after and before with this to make it work*/
 *,
 *::after,
-*::before  {
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; /* Avoid using * selector as much as possible */
+  box-sizing: inherit;
+  /* Avoid using * selector as much as possible */
 }
 
 html {
   font-size: 62.5%; // To make 1rem = 10px Note Default Size of font is 16px
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
 }
 
 body {
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin:0 15rem;
-  }
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 15rem;
+}
