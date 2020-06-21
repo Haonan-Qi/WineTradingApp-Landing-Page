@@ -1,0 +1,125 @@
+.section__project-intro {
+    padding: auto;
+    margin: 10rem auto 0 auto;
+    max-width: 150rem;
+}
+.section__why-chose-us {
+    position: relative;
+    z-index: -100;
+    max-width: 150rem;
+    overflow: hidden;
+    padding-top: 15rem;
+    height: 140rem;
+    margin: 0 auto;
+    top:20rem;
+
+    .row {
+        justify-content: space-between;
+
+        .card-set {
+            position: relative;
+        }
+    }
+
+    h1 {
+        z-index: 200;
+    }
+
+    .why__background {
+        z-index: -100;
+        height: 10rem;
+        overflow: hidden;
+        max-width: 150rem;
+
+        &--black {
+            z-index: -100;
+            @include absolute-center;
+            top: 502.5rem;
+            width: 1000rem;
+            height: 1000rem;
+            left: 75%;
+            border-radius: 50%;
+            background-color: #151211;
+        }
+
+        &--gray {
+            z-index: -100;
+            @include absolute-center;
+            top: 500rem;
+            width: 1000rem;
+            height: 1000rem;
+            left: 85%;
+            border-radius: 50%;
+            background-color: #666971;
+        }
+    }
+     
+    .card-set{
+        width: 50%;
+    }
+
+
+}
+.section__what-wil-cos_background-main{
+    @include absolute-center;
+    width: 770rem;
+    height: 600rem;
+    border-radius: 50%;
+    left: 67%;
+    top:305rem;
+    z-index:-1;
+    background-color: #3D3F68;
+}
+.section__what-wil-cost {
+    position: relative;
+    height: 95rem;
+    overflow: hidden;
+    max-width: 150rem;
+    margin: 0 auto;
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .content {
+        position: absolute;
+        top: 20rem;
+    }
+
+    .content-2 {
+        position: absolute;
+        bottom: 13rem;
+        text-align: center;
+
+        .row {
+            width: 45%;
+        }
+
+        .heading__secondary {
+            color: white;
+        }
+
+        .btn {
+            max-width: 100%;
+            max-height: 100%;
+            position: relative;
+            top: 5rem;
+        }
+    }
+
+    .row {
+        justify-content: space-around;
+        top: 10rem;
+    }
+
+    .col-4-of-10 {
+        width: 20%;
+    }
+
+    .bg-1 {
+        @include absolute-center;
+        width: 100rem;
+        top: 75rem;
+    }
+
+}

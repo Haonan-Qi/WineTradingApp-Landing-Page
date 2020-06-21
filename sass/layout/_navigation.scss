@@ -1,0 +1,24 @@
+.navigation {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    padding: 2.4rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    top:0;
+
+    &__logo-header{
+        transform: translateY(-0.5rem);
+        cursor: pointer;
+    }
+    &__item {
+        right: 0;
+        color: red;
+        margin: 0 1rem;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+    }
+}

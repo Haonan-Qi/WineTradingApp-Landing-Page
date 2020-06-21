@@ -1,0 +1,290 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* Avoid using * selector as much as possible */ }
+
+html {
+  font-size: 62.5%;
+  /* 16px is the deafult setting */ }
+
+body {
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 15rem; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  /* 1.7 times bigger than default line-height */
+  box-sizing: border-box; }
+
+.heading__primary {
+  font-family: 'Aclonica', sans-serif;
+  color: #ED8A68;
+  line-height: 6rem;
+  font-size: 6rem; }
+
+.heading__secondary {
+  font-family: 'Aclonica', sans-serif;
+  color: #ED8A68;
+  font-size: 4rem;
+  font-weight: 100; }
+
+.main-content {
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2.4rem; }
+
+.ul-project-intro {
+  margin-top: 1rem; }
+  .ul-project-intro .ul-project-intro__item {
+    list-style: none;
+    margin-top: 0.3rem; }
+    .ul-project-intro .ul-project-intro__item span {
+      position: relative; }
+      .ul-project-intro .ul-project-intro__item span .xx {
+        float: left;
+        transform: translateY(0.3rem); }
+  .ul-project-intro--2 {
+    position: relative;
+    top: 3rem; }
+    .ul-project-intro--2 img {
+      max-width: 100%; }
+
+.u-text-color-black {
+  color: black !important; }
+
+.u-position-relative {
+  position: relative; }
+
+.u-margin-top-reset {
+  margin-top: 0rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.download-set {
+  margin-top: 2rem; }
+  .download-set__g {
+    display: inline-block;
+    margin-right: 2rem;
+    cursor: pointer; }
+  .download-set__a {
+    display: inline-block;
+    cursor: pointer; }
+
+.section__project-intro {
+  padding: auto;
+  margin-top: 10rem;
+  max-width: 150rem; }
+
+.row {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  min-height: 25rem;
+  max-width: 90%;
+  flex-wrap: wrap; }
+  .row .col-4-of-10 {
+    width: 40%; }
+    .row .col-4-of-10 img {
+      max-width: 100%;
+      max-height: 100%; }
+  .row .col-5-of-10 {
+    max-width: 50%; }
+    .row .col-5-of-10 img {
+      max-width: 100%;
+      max-height: 100%; }
+  .row .col-6-of-10 {
+    max-width: 60%;
+    padding: 3rem; }
+    .row .col-6-of-10 img {
+      max-width: 100%;
+      max-height: 100%; }
+  .row [class^="col-"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.header {
+  height: 85vh;
+  max-width: 150rem;
+  position: relative;
+  margin: 0 auto; }
+  .header-position {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 5rem; }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .header__content--left {
+    width: 50%;
+    padding-top: 3rem; }
+  .header__content--right {
+    width: 45%;
+    position: relative; }
+    .header__content--right__phone {
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      transform: scale(1.8); }
+  .header__background {
+    z-index: -100; }
+  .header__background--gray {
+    z-index: -200;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 2rem; }
+  .header__background--black {
+    z-index: -200;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; }
+  .header__background--blue {
+    z-index: -200;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%; }
+
+.navigation {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  padding: 2.4rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  top: 0; }
+  .navigation__logo-header {
+    transform: translateY(-0.5rem);
+    cursor: pointer; }
+  .navigation__item {
+    right: 0;
+    color: red;
+    margin: 0 1rem;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer; }
+
+.section__project-intro {
+  padding: auto;
+  margin: 10rem auto 0 auto;
+  max-width: 150rem; }
+
+.section__why-chose-us {
+  position: relative;
+  z-index: -100;
+  max-width: 150rem;
+  overflow: hidden;
+  padding-top: 15rem;
+  height: 140rem;
+  margin: 0 auto;
+  top: 20rem; }
+  .section__why-chose-us .row {
+    justify-content: space-between; }
+    .section__why-chose-us .row .card-set {
+      position: relative; }
+  .section__why-chose-us h1 {
+    z-index: 200; }
+  .section__why-chose-us .why__background {
+    z-index: -100;
+    height: 10rem;
+    overflow: hidden;
+    max-width: 150rem; }
+    .section__why-chose-us .why__background--black {
+      z-index: -100;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 502.5rem;
+      width: 1000rem;
+      height: 1000rem;
+      left: 75%;
+      border-radius: 50%;
+      background-color: #151211; }
+    .section__why-chose-us .why__background--gray {
+      z-index: -100;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 500rem;
+      width: 1000rem;
+      height: 1000rem;
+      left: 85%;
+      border-radius: 50%;
+      background-color: #666971; }
+  .section__why-chose-us .card-set {
+    width: 50%; }
+
+.section__what-wil-cos_background-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 770rem;
+  height: 600rem;
+  border-radius: 50%;
+  left: 67%;
+  top: 305rem;
+  z-index: -1;
+  background-color: #3D3F68; }
+
+.section__what-wil-cost {
+  position: relative;
+  height: 95rem;
+  overflow: hidden;
+  max-width: 150rem;
+  margin: 0 auto; }
+  .section__what-wil-cost img {
+    max-height: 100%;
+    max-width: 100%; }
+  .section__what-wil-cost .content {
+    position: absolute;
+    top: 20rem; }
+  .section__what-wil-cost .content-2 {
+    position: absolute;
+    bottom: 13rem;
+    text-align: center; }
+    .section__what-wil-cost .content-2 .row {
+      width: 45%; }
+    .section__what-wil-cost .content-2 .heading__secondary {
+      color: white; }
+    .section__what-wil-cost .content-2 .btn {
+      max-width: 100%;
+      max-height: 100%;
+      position: relative;
+      top: 5rem; }
+  .section__what-wil-cost .row {
+    justify-content: space-around;
+    top: 10rem; }
+  .section__what-wil-cost .col-4-of-10 {
+    width: 20%; }
+  .section__what-wil-cost .bg-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100rem;
+    top: 75rem; }

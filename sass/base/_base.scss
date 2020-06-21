@@ -1,0 +1,18 @@
+/* The range of Universal selector is limited, Not how to combine after and before with this to make it work*/
+*,
+*::after,
+*::before  {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* Avoid using * selector as much as possible */
+}
+
+html {
+  font-size: 62.5%; // To make 1rem = 10px Note Default Size of font is 16px
+}
+
+body {
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin:0 15rem;
+  }
