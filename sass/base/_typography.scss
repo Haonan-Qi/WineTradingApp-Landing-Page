@@ -7,44 +7,55 @@ body {
     box-sizing: border-box;
 }
 
-.heading__primary{
+.heading__primary {
     font-family: 'Aclonica', sans-serif;
     color: #ED8A68;
     line-height: 6rem;
     font-size: 6rem;
+    @include respond(tab-land) {
+        font-size: 4rem;
+    }
 }
 
-.heading__secondary{
+.heading__secondary {
     font-family: 'Aclonica', sans-serif;
     color: #ED8A68;
     font-size: 4rem;
     font-weight: 100;
+    @include respond(tab-land) {
+        font-size: 3rem;
+    }
 }
 
-.main-content{
+.main-content {
     margin-top: 1rem;
     color: white;
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
 
-.ul-project-intro{
+.ul-project-intro {
     margin-top: 1rem;
-    .ul-project-intro__item{
+
+    .ul-project-intro__item {
         list-style: none;
         margin-top: 0.3rem;
-        span{
+
+        span {
             position: relative;
-            .xx{
+
+            .xx {
                 float: left;
                 transform: translateY(0.3rem);
             }
         }
     }
-    &--2{
+
+    &--2 {
         position: relative;
         top: 3rem;
-        img{
+
+        img {
             max-width: 100%;
         }
     }

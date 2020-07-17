@@ -33,26 +33,36 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @if $breakpoint==phone {
     @media only screen and (max-width: 600px) {
       @content;
-    } //600px
+    }
   }
 
   @if $breakpoint==tab-port {
     @media only screen and (max-width: 900px) {
       @content;
-    } //900px
+    }
   }
 
   @if $breakpoint==tab-land {
     @media only screen and (max-width: 1200px) {
       @content;
-    } //1200px
+    }
   }
 
   @if $breakpoint==big-desktop {
-    @media only screen and (min-width: 1800px) {
+    @media only screen and (min-width: 1700px) {
       @content;
-    } //1800
-  } @else {
+    }
+
+  }
+
+  @if $breakpoint==big-mac-desktop {
+    @media only screen and (min-width: 2200px) {
+      @content;
+    }
+
+  }
+
+  @else {
     @media only screen and (max-width: $breakpoint) {
       @content;
     }

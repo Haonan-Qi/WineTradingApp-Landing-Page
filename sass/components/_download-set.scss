@@ -1,13 +1,13 @@
 .download-set{
     margin-top: 2rem;
-    &__g{
+    &>*{
         display: inline-block;
+        cursor: pointer;
+        width: 20rem;
+    }
+    &:not(:last-child){
         margin-right: 2rem;
-        cursor: pointer;
     }
-    &__a{
-        display: inline-block;
-        cursor: pointer;
-    }
+
 }
 
